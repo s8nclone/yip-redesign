@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+html, body {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  overflow-x: clip;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+.header .navigation {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 600;
+  /*<===== hamburger styling =====>*/
+}
+.header .navigation .site-logo > img {
+  width: 8rem;
+  height: 3rem;
+}
+.header .navigation .navitems {
+  display: none;
+}
+.header .navigation .navitems.active {
+  display: block;
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  background-color: #FFF;
+  padding: 1rem 0;
+  width: 90dvw;
+}
+.header .navigation .navitems .navlist > li {
+  display: block;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-bottom: 0.0125rem solid rgba(0, 0, 0, 0.3019607843);
+  cursor: pointer;
+}
+.header .navigation .navitems .nav-cta {
+  width: 80%;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #0D6EFD;
+  margin: 1rem 3rem;
+  color: #FFF;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.header .navigation .hamburger {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+}
+.header .navigation .hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease;
+  background-color: #0D6EFD;
+}
+.header .navigation .hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.header .navigation .hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.header .navigation .hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/*# sourceMappingURL=styles.css.map */

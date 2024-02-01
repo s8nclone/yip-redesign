@@ -1,0 +1,101 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    overflow-x: clip;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+.header {
+    .navigation {
+        display: flex;
+        padding: 2rem;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        text-transform: uppercase;
+        font-weight: 600;
+
+        .site-logo>img {
+            width: 8rem;
+            height: 3rem;
+        }
+
+        .navitems {
+            display: none;
+
+            &.active {
+                display: block;
+                position: absolute;
+                top: 70%;
+                left: 5%;
+                background-color: #FFF;
+                padding: 1rem 0;
+                width: 90dvw;
+
+            }
+
+            .navlist>li {
+                display: block;
+                margin: 1rem 0 ;
+                padding: 1rem;
+                border-bottom: .0125rem solid #0000004d;
+                cursor: pointer;
+            }
+
+            .nav-cta {
+                width: 80%;
+                padding: .8rem;
+                border-radius: 1rem;
+                border: none;
+                background-color: #0D6EFD;
+                margin: 1rem 3rem;
+                color: #FFF;
+                font-weight: 600;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+        }
+        
+        /*<===== hamburger styling =====>*/
+        .hamburger {
+            display: block;
+            cursor: pointer;
+            position: absolute;
+            right: 15px;
+            
+            .bar{
+                display: block;
+                width: 25px;
+                height: 3px;
+                margin: 5px auto;
+                transition: all 0.3s ease;
+                background-color: #0D6EFD;
+            }
+            
+            &.active .bar:nth-child(2){
+                opacity: 0;
+            }
+            
+            &.active .bar:nth-child(1){
+                transform: translateY(8px) rotate(45deg);
+            }
+            
+            &.active .bar:nth-child(3){
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        
+        }
+        
+        
+
+    }
+}
