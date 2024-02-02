@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
+    max-width: 100dvw;
 }
 
 html, body {
@@ -12,12 +13,18 @@ html, body {
     overflow-x: clip;
     list-style: none;
     scroll-behavior: smooth;
+    font-size: 62.5%;
+    line-height: 1.5;
+    height: 100dvh;
+    background-color: #000;
 }
 
 .header {
+    background-color: #FFF;
+
     .navigation {
         display: flex;
-        padding: 2rem;
+        padding: 3rem;
         justify-content: space-between;
         align-items: center;
         position: relative;
@@ -26,7 +33,7 @@ html, body {
 
         .site-logo>img {
             width: 8rem;
-            height: 3rem;
+            height: 4rem;
         }
 
         .navitems {
@@ -36,28 +43,32 @@ html, body {
                 display: block;
                 position: absolute;
                 top: 70%;
-                left: 5%;
+                left: 0;
+                right: 0;
                 background-color: #FFF;
                 padding: 1rem 0;
-                width: 90dvw;
+                width: 100dvw;
 
             }
 
             .navlist>li {
                 display: block;
-                margin: 1rem 0 ;
+                margin: 1.5rem ;
                 padding: 1rem;
                 border-bottom: .0125rem solid #0000004d;
                 cursor: pointer;
+                font-size: 2.5rem;
             }
 
             .nav-cta {
+                display: flex;
+                justify-content: center;
                 width: 80%;
-                padding: .8rem;
-                border-radius: 1rem;
+                padding: 1rem;
+                border-radius: 2rem;
                 border: none;
                 background-color: #0D6EFD;
-                margin: 1rem 3rem;
+                margin: 2rem auto;
                 color: #FFF;
                 font-weight: 600;
                 text-transform: uppercase;
@@ -98,4 +109,300 @@ html, body {
         
 
     }
+}
+
+.hero {
+    padding: 2rem;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    background-color: #FFF;
+
+    h1 {
+        font-size: 5rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .hero-img {
+        width: 35rem;
+        height: 20rem;
+        margin: 1rem auto;
+
+        img {
+            width: inherit;
+            height: inherit;
+            border-radius: 2rem;
+        }
+    }
+
+    .hero-info {
+        margin: 2rem 0;
+        h3 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 1rem;
+            font-size: 1.5rem;
+            background-color: #0D6EFD;
+            border: none;
+            cursor: pointer;
+            color: #FFF;
+            font-weight: 600;
+            margin: 2rem 0;
+              
+            .hero-cta {
+                display: block;
+                box-sizing: border-box;
+                border: 2px solid #0D6EFD;
+                border-radius: 1rem;
+                padding: .5em;
+                background: #FFF;
+                color: #0D6EFD;
+                transform: translateY(-0.2em);
+                transition: transform 0.1s ease;
+            }
+              
+            &:hover .hero-cta {
+                /* Pull the button upwards when hovered */
+                transform: translateY(-0.33em);
+            }
+              
+            &:active .hero-cta {
+                /* Push the button downwards when pressed */
+                transform: translateY(0);
+            }
+        }
+    }
+}
+
+.whoWeAre {
+    margin: 3rem 0;
+    padding: .5rem 2rem;
+    color: #e8e8e8;
+
+    .whoWeAre-info {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #ffffff67;
+    }
+
+    .whoWeAre-header {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    .whoWeAre-text {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-top: .5rem;
+    }
+
+    .whoWeAre-cta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: max-content;
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 2rem 0;
+        padding: 1rem;
+        border-radius: 1rem;
+        border: unset;
+        color: #000;
+        z-index: 1;
+        background: #e8e8e8;
+        position: relative;
+        box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+        -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+        transition: all 250ms;
+        overflow: hidden;
+    
+           
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0;
+            border-radius: inherit;
+            background-color: #000;
+            z-index: -1;
+            box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+            -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+            transition: all 250ms
+        }
+           
+        &:hover {
+            color: #e8e8e8;
+        }
+           
+        &:hover::before {
+            width: 100%;
+        }
+    }
+
+    
+}
+
+.statements {
+    background: #0D6EFD;
+    margin: 5rem;
+    border-radius: 3rem;
+    padding: 2rem;
+    color: #FFF;
+    box-shadow: 0 0 4rem 2rem #0d6dfd5b;
+
+    .statements-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin: 2rem 0;
+
+        .statement-img>img {
+            width: 15rem;
+            height: 15rem;
+            border-radius: 3rem;
+        }
+
+        .statement-body {
+            font-size: 2rem;
+            align-self: left;
+
+            p {
+                font-size: 2.5rem;
+                font-weight: 700;
+            }
+        }
+
+        @media screen and (min-width: 420px) {
+            flex-direction: row;
+            justify-content: space-between;
+            
+        }
+    }
+}
+
+.weCanHelp {
+    color: #e8e8e8;
+    padding: 2rem;
+
+    h2 {
+        font-size: 3.5rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        // text-align: center;
+    }
+
+    p {
+        margin: 1rem 0;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+    button {
+        font-size: 1.5rem;
+        font-weight: 600;
+        position: relative;
+        margin: auto;
+        padding: 1.5rem 2.5rem;
+        border: none;
+        border-radius: 2em;
+        background: #fff;
+        transition: all 0.1s linear;
+        box-shadow: 0 0.5rem 1.5rem #ffffff1a;
+        
+        &:active {
+            transform: scale(0.95);
+        }
+        
+        span {
+            color: #000;
+        }
+        
+        .border {
+            position: absolute;
+            border: 0.2rem solid #fff;
+            transition: all 0.3s 0.08s linear;
+            top: 50%;
+            left: 50%;
+            width: 9em;
+            height: 3em;
+            transform: translate(-50%, -50%);
+        }
+        
+        &:hover .border {
+            display: block;
+            width: 15rem;
+            height: 6rem;
+        }
+        
+        .full-rounded {
+            border-radius: 2em;
+        }
+    }
+    
+}
+
+.whatWeOffer {
+    margin: 5rem;
+    background-color: #FFF;
+    padding: 2rem;
+    border-radius: 2rem;
+    color: #0000009d;
+
+    p {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .offer-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+        margin: 5rem 0;
+
+        .offer-img>img {
+            width: 15rem;
+            height: 15rem;
+            border-radius: 2em;
+        }
+
+        p {
+            color: #000;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        span {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        
+    }
+    
+    @media screen and (min-width:420px) {
+        .offer-items {
+            flex-direction: row;
+        }
+        
+        .right {
+            flex-direction: row-reverse;
+        }
+    }
+    
 }
