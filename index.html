@@ -30,12 +30,12 @@
             <nav class="navigation">
                 <span class="site-logo"><img src="assets/yip-online.png" alt="Yip logo"></span>
 
-                <div class="navitems" data-aos="fade-down" data-aos-duration="5000">
+                <div class="navitems" data-aos="fade-down" data-aos-duration="1000">
                     <ul class="navlist">
-                        <li>Home</li>
-                        <li>Products</li>
-                        <li>Careers</li>
-                        <li>Contact Us</li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
                     </ul>
                     <button class="nav-cta">Join Us</button>
 
@@ -49,29 +49,30 @@
             </nav>
         </header>
 
-        <main>
-            <!-- hero section -->
-            <section>
-                <div class="hero">
-                    <h1>Innovative Solutions For Scaling Businesses.</h1>
+        <!-- hero section -->
+        <section id="home">
+            <div class="hero">
+                <h1 data-aos="fade-down" data-aos-duration="1000">Innovative Solutions For Scaling Businesses.</h1>
 
-                    <div class="hero-img">
-                        <img src="/assets/customer-agreement.gif" alt="customer satisfaction" >
-                    </div>
-
-                    <div class="hero-info">
-                        <h3>DOES YOUR BUSINESS NEED TO GROW?</h3>
-                        <p>You're in luck, we have just what you need: simple, affordable and 
-                            quick-to-deploy technology, tools and apps for your SME and Large Enterprises!
-                        </p>
-                        <button><span class="hero-cta">Get Started <i class="fa-solid fa-arrow-right"></i></span></button>
-                    </div>
+                <div class="hero-img">
+                    <img src="/assets/customer-agreement.gif" alt="customer satisfaction" >
                 </div>
-            </section>
+
+                <div class="hero-info">
+                    <h3>DOES YOUR BUSINESS NEED TO GROW?</h3>
+                    <p>You're in luck, we have just what you need: simple, affordable and 
+                        quick-to-deploy technology, tools and apps for your SME and Large Enterprises!
+                    </p>
+                    <button><span class="hero-cta">Get Started <i class="fa-solid fa-arrow-right"></i></span></button>
+                </div>
+            </div>
+        </section>
+
+        <main>
 
             <!-- who we are -->
             <section>
-                <div class="whoWeAre">
+                <div class="whoWeAre" data-aos="fade-up" data-aos-duration="1000">
                     <p class="whoWeAre-info">Who we are</p>
                     <p class="whoWeAre-header">We Yeepsters make running a business a breeze by developing smart technology 
                         that simplifies tasks, streamlines operations, and boosts efficiency and profits.
@@ -109,25 +110,25 @@
 
             <!-- we can help -->
             <section>
-                <div class="weCanHelp">
+                <div class="weCanHelp" data-aos="fade-down" data-aos-duration="2000">
                     <h2>Let's show you how we can use tech to grow your business</h2>
                     <p>We focus on bringing value and leverage on technology to solve challenges that businesses face.</p>
 
-                    <button class="full-rounded">
+                    <button>
                         <span>Get Started Now</span>
-                        <div class="border full-rounded"></div>
+                        <div class="border"></div>
                     </button>
                 </div>
             </section>
 
             <!-- solutions provided -->
-            <section>
+            <section id="products">
                 <div class="whatWeOffer">
                     <p>What we offer</p>
                     <div class="offer-items">
                         <div class="offer-img"><img src="/assets/e-commerce.webp" alt="e-commerce"></div>
 
-                        <div class="offer-body">
+                        <div class="offer-body" data-aos="fade-left" data-aos-duration="1000">
                             <p>E-commerce</p>
                             <span>Have a physical store or an online business? we help you create a 
                                 stunning online store that attracts customers and boosts sales.
@@ -137,7 +138,7 @@
                     <div class="offer-items right">
                         <div class="offer-img"><img src="/assets/hospitality.webp" alt="hospitality"></div>
 
-                        <div class="offer-body">
+                        <div class="offer-body" data-aos="fade-right" data-aos-duration="1000">
                             <p>Hospitality</p>
                             <span>Thinking luxury, cozy, or budget-friendly, we have it all.</span>
                         </div>
@@ -145,7 +146,7 @@
                     <div class="offer-items">
                         <div class="offer-img"><img src="/assets/SEO.webp" alt="SEO"></div>
 
-                        <div class="offer-body">
+                        <div class="offer-body"  data-aos="fade-left" data-aos-duration="1000">
                             <p>SEO Optimization</p>
                             <span>We help you reach your target audience and grow your business by boosting 
                                 your online presence and rank higher on search engines with our SEO optimization.
@@ -155,7 +156,7 @@
                     <div class="offer-items right">
                         <div class="offer-img"><img src="/assets/responsive-theme.jpeg" alt="responsive theme"></div>
 
-                        <div class="offer-body">
+                        <div class="offer-body"  data-aos="fade-right" data-aos-duration="1000">
                             <p>Responsive Themes</p>
                             <span>Our themes are designed to adapt to different screen sizes and resolutions, 
                                 ensuring a smooth and consistent user experience. 
@@ -165,7 +166,7 @@
                     <div class="offer-items">
                         <div class="offer-img"><img src="/assets/domain.webp" alt="custom domain"></div>
 
-                        <div class="offer-body">
+                        <div class="offer-body" data-aos="fade-left" data-aos-duration="1000">
                             <p>Custom Domain</p>
                             <span> 
                                 We help you create a unique and memorable identity for your website.
@@ -173,10 +174,120 @@
                             </span>
                         </div>
                     </div>
+
+                    <button class="learn-more"><a href="#">Learn More</a></button>
                 </div>
             </section>
-        </main>
 
+            <!-- FAQ -->
+            <section>
+                <div class="accordion">
+                    <h3>FAQs</h3>
+
+                    <details class="faq">
+                        <summary class="faq-question">How do you communicate and collaborate with your clients? <span><i class="fa-solid fa-chevron-down"></i></span></summary>
+                        <p class="faq-answer">Communication and collaboration are essential for the success of any project. 
+                            We use various tools and methods to keep in touch and work with our clients, such as: Email, Phone, 
+                            Video calls, Online platforms like Slack, Trello, Live demos, Mockups, Online Surverys and others.
+
+                            <span><img src="/assets/communication.jpeg" alt="communication"></span>
+                        </p>
+                    
+                    </details>
+
+                    <details class="faq">
+                        <summary class="faq-question">How do you ensure the quality and security of your solutions? <span><i class="fa-solid fa-chevron-down"></i></span></summary>
+                        <p class="faq-answer">Quality and security are our top priorities at Yiponline. We follow the best practices and standards of software engineering, 
+                            web development, and IT management, such as agile methodology, code review, testing, debugging, documentation, etc. 
+                            We also use the latest and most reliable tools and technologies, such as cloud platforms, encryption, 
+                            firewalls, antivirus, etc. to protect your data and systems from any threats or risks. Moreover, we have a team of 
+                            certified and experienced professionals, who are constantly learning and improving their skills and knowledge, to deliver the best solutions for your business.
+                        </p>    
+                    
+                    </details>
+
+                    <details class="faq">
+                        <summary class="faq-question">What kind of projects have you worked on before? <span><i class="fa-solid fa-chevron-down"></i></span></summary>
+                        <p class="faq-answer">We have worked on a variety of projects across different domains and industries, such as e-commerce, 
+                            education, healthcare, entertainment.
+                            <span><img src="/assets/projects.jpeg" alt="projects"></span>
+                        </p>
+                        
+                    </details>
+
+                    <details class="faq">
+                        <summary class="faq-question">How do you charge for your services? <span><i class="fa-solid fa-chevron-down"></i></span></summary>
+                        <p class="faq-answer">We charge for our services based on the scope, complexity, 
+                            and duration of the project, as well as the level of expertise and resources required. 
+                            We offer flexible and transparent pricing models, such as fixed price, hourly rate, retainer, 
+                            or value-based, depending on your preferences and needs. We also provide free estimates and consultations, 
+                            so you can get a clear idea of the costs and benefits of working with us.
+                        </p>
+                      
+                    </details>
+                </div>
+            </section>
+
+        </main>
+        
+        <!-- Footer -->
+        <Footer id="contact">
+            <div class="footer">
+                <div class="logo"><img src="/assets/yip-online.png" alt="logo"></div>
+
+                <aside>
+                    <div class="footer-item">
+                        <h3>Visit our HQ</h3>
+                        <p>Lagos, Nigeria</p>
+                    </div>
+                    <div class="footer-item">
+                        <h3>Contact</h3>
+                        <p>Support <span><a href="tel:+2349037912235">+234-(0)90-379-122-35</a></span></p>
+                        <p>Sales <span><a href="tel:+2348095306440">+234-(0)80-953-064-40</a></span></p>
+                    </div>
+                </aside>
+
+                <section  data-aos="fade-up" data-aos-duration="2000">
+                    <div class="footer-item">
+                        <h3>Useful Links</h3>
+                        <ul class="footer-link">
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-item">
+                        <h3>Our Services</h3>
+                        <ul class="footer-link">
+                            <li><a href="#">Powpa</a></li>
+                            <li><a href="#">Simpo</a></li>
+                            <li><a href="#">Software Development</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-item">
+                        <h3>About</h3>
+                        <ul class="footer-link">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Send a Message</a></li>
+                        </ul>
+                    </div> 
+                    <div class="footer-item">
+                        <h3>Our Socials</h3>
+                        <ul class="footer-link">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">X</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                        </ul>
+                    </div>
+
+                </section>
+
+                <p class="legal">Yip-Online redesign. @2024 by <span><a href="#" target="_blank">Farayola Muiz</a></span>. All Rights Reserved</p>
+                
+                <button class="go-up"><a href="#"><i class="fa-solid fa-chevron-up"></i></a></button>
+            </div>
+
+        </Footer>
 
         
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

@@ -13,6 +13,8 @@ $(document).ready(function() {
     // attach click event handlers to elements
     hamburger.click(openNav);
 
+    // $(".hero").("h1").slideDown(1000);
+
 });
 
 
