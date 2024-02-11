@@ -24,7 +24,7 @@ html, body {
 }
 .header .navigation {
   display: flex;
-  padding: 3rem;
+  padding: 2rem;
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
@@ -61,7 +61,7 @@ html, body {
   padding: 1rem;
   border-bottom: 0.0125rem solid #000;
   cursor: pointer;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 .header .navigation .navitems .navlist > li a {
   text-decoration: none;
@@ -110,7 +110,7 @@ html, body {
 }
 @media screen and (min-width: 769px) {
   .header .navigation {
-    padding-inline: 5rem;
+    padding: 3rem 5rem;
     border-bottom-left-radius: 5rem;
     border-bottom-right-radius: 5rem;
   }
@@ -130,6 +130,7 @@ html, body {
     justify-content: space-between;
   }
   .header .navigation .navitems .navlist li {
+    font-size: 2.5rem;
     border-bottom: none;
     white-space: nowrap;
   }
@@ -154,7 +155,6 @@ html, body {
   font-size: 4rem;
   font-weight: 900;
   text-transform: uppercase;
-  text-align: center;
 }
 .hero .hero-img {
   width: 25rem;
@@ -168,10 +168,6 @@ html, body {
 }
 .hero .hero-info {
   margin: 2rem 0;
-}
-.hero .hero-info h3 {
-  font-size: 3rem;
-  font-weight: 700;
 }
 .hero .hero-info p {
   font-size: 2rem;
@@ -188,7 +184,7 @@ html, body {
   cursor: pointer;
   color: #FFF;
   font-weight: 600;
-  margin: 2rem 0;
+  margin: 3rem 0;
 }
 .hero .hero-info button .hero-cta {
   display: block;
@@ -217,6 +213,7 @@ html, body {
   .hero h1 {
     font-size: 9rem;
     margin-top: 5rem;
+    text-align: center;
   }
   .hero .hero-img {
     width: 50rem;
@@ -225,11 +222,8 @@ html, body {
   .hero .hero-info {
     padding-inline: 15rem;
   }
-  .hero .hero-info h3 {
-    font-size: 5rem;
-  }
   .hero .hero-info p {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .hero .hero-info button .hero-cta {
     padding: 1em;
@@ -254,23 +248,24 @@ html, body {
   color: rgba(255, 255, 255, 0.4039215686);
 }
 .whoWeAre .whoWeAre-header {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 700;
+  margin-top: 1rem;
 }
 .whoWeAre .whoWeAre-text {
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 500;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 .whoWeAre .whoWeAre-cta {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: max-content;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin: 2rem 0;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 1rem;
   border: unset;
   color: #000;
@@ -313,13 +308,15 @@ html, body {
     font-size: 3rem;
   }
   .whoWeAre .whoWeAre-header {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
   .whoWeAre .whoWeAre-text {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .whoWeAre .whoWeAre-cta {
     align-self: flex-end;
+    font-size: 2rem;
+    padding: 1rem;
   }
 }
 
@@ -344,11 +341,11 @@ html, body {
   border-radius: 3rem;
 }
 .statements .statements-container .statement-body {
-  font-size: 2rem;
+  font-size: 1.5rem;
   align-self: left;
 }
 .statements .statements-container .statement-body p {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 @media screen and (min-width: 420px) {
@@ -374,7 +371,7 @@ html, body {
     height: 25rem;
   }
   .statements .statements-container .statement-body {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .statements .statements-container .statement-body p {
     font-size: 3rem;
@@ -386,21 +383,21 @@ html, body {
   padding: 2rem;
 }
 .weCanHelp h2 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 800;
   text-transform: uppercase;
 }
 .weCanHelp p {
   margin: 1rem 0;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 .weCanHelp button {
   font-size: 1.5rem;
   font-weight: 600;
   position: relative;
-  margin: auto;
-  padding: 1.5rem 2.5rem;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
   border: none;
   border-radius: 2em;
   background: #FFF;
@@ -419,21 +416,21 @@ html, body {
   top: 50%;
   left: 50%;
   width: 9em;
-  height: 3em;
+  height: 2em;
   border-radius: 2em;
   transform: translate(-50%, -50%);
 }
 .weCanHelp button:hover .border {
   display: block;
   width: 15rem;
-  height: 6rem;
+  height: 5rem;
 }
 @media screen and (min-width: 769px) {
   .weCanHelp h2 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   .weCanHelp p {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .weCanHelp button {
     margin: 3rem auto;
@@ -465,7 +462,7 @@ html, body {
 }
 .whatWeOffer .offer-items p {
   color: #000;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 .whatWeOffer .offer-items span {
@@ -476,7 +473,7 @@ html, body {
   border: none;
   background: #B5D75C;
   border-radius: 2rem;
-  padding: 1.5rem;
+  padding: 1rem;
   display: flex;
   margin-inline: auto;
   margin-top: 5rem;
@@ -484,7 +481,7 @@ html, body {
 .whatWeOffer .learn-more a {
   text-decoration: none;
   color: #FFF;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -496,7 +493,7 @@ html, body {
     padding: 4rem;
   }
   .whatWeOffer p {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 2rem 0;
   }
   .whatWeOffer .offer-items {
@@ -509,7 +506,7 @@ html, body {
     height: 20rem;
   }
   .whatWeOffer .offer-items p {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .whatWeOffer .offer-items span {
     font-size: 2rem;
@@ -532,14 +529,20 @@ html, body {
     gap: 4rem;
   }
   .whatWeOffer .offer-items .offer-img > img {
-    width: 40rem;
-    height: 30rem;
+    width: 35rem;
+    height: 25rem;
   }
   .whatWeOffer .offer-items p {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .whatWeOffer .offer-items span {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+  .whatWeOffer .learn-more {
+    padding: 1.5rem;
+  }
+  .whatWeOffer .learn-more a {
+    font-size: 1.5rem;
   }
   .whatWeOffer .right {
     flex-direction: row-reverse;
@@ -551,7 +554,7 @@ html, body {
   color: #e8e8e8;
 }
 .accordion h3 {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
 }
 .accordion .faq {
@@ -567,12 +570,12 @@ html, body {
   list-style: none;
   outline: none;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   margin: 0.5rem 0;
 }
 .accordion .faq .faq-answer {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 10px;
   font-weight: 600;
   display: flex;
@@ -593,18 +596,21 @@ html, body {
   .accordion {
     margin: 10rem;
   }
+  .accordion h3 {
+    font-size: 4rem;
+  }
   .accordion .faq {
     padding: 2rem 0;
   }
   .accordion .faq .faq-question {
-    font-size: 2.5rem;
-  }
-  .accordion .faq .faq-answer {
     font-size: 2rem;
   }
+  .accordion .faq .faq-answer {
+    font-size: 1.5rem;
+  }
   .accordion .faq .faq-answer span > img {
-    width: 20rem;
-    height: 20rem;
+    width: 15rem;
+    height: 15rem;
   }
 }
 
@@ -620,11 +626,11 @@ html, body {
 .footer .logo {
   display: flex;
   justify-content: center;
-  margin: 3rem 0;
+  margin: 1rem 0;
 }
 .footer .logo img {
-  width: 15rem;
-  height: 10rem;
+  width: 7rem;
+  height: 5rem;
 }
 .footer aside {
   display: flex;
@@ -635,17 +641,17 @@ html, body {
   gap: 2rem;
 }
 .footer aside div h3 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 .footer aside div p {
   display: flex;
   flex-direction: column;
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 .footer aside div p > span > a {
-  font-size: 2rem;
+  font-size: 1.2rem;
   cursor: pointer;
   font-weight: 500;
   text-decoration: none;
@@ -658,11 +664,11 @@ html, body {
   margin: 1rem 0;
 }
 .footer section .footer-item h3 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 .footer section .footer-item .footer-link > li > a {
-  font-size: 2rem;
+  font-size: 1.2rem;
   cursor: pointer;
   font-weight: 500;
   text-decoration: none;
@@ -674,18 +680,42 @@ html, body {
 .footer section .footer-item p {
   display: flex;
   flex-direction: column;
-  font-size: 2.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 @media screen and (min-width: 769px) {
+  .footer {
+    padding-inline: 5rem;
+  }
+  .footer .logo {
+    margin: 2rem 0;
+  }
+  .footer .logo img {
+    width: 15rem;
+    height: 10rem;
+  }
+  .footer aside div h3 {
+    font-size: 2.5rem;
+  }
+  .footer aside div p,
+  .footer aside div p > span > a {
+    font-size: 2rem;
+  }
   .footer section {
     display: flex;
     justify-content: space-evenly;
     padding: 2rem;
   }
+  .footer section .footer-item h3 {
+    font-size: 2.5rem;
+  }
+  .footer section .footer-item .footer-link > li > a,
+  .footer section .footer-item p {
+    font-size: 2rem;
+  }
 }
 .footer .legal {
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;
   margin-top: 3rem;
 }

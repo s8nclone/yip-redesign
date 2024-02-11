@@ -36,7 +36,7 @@ html, body {
 
     .navigation {
         display: flex;
-        padding: 3rem;
+        padding: 2rem;
         justify-content: space-between;
         align-items: center;
         text-transform: uppercase;
@@ -76,7 +76,7 @@ html, body {
                 padding: 1rem;
                 border-bottom: .0125rem solid $black;
                 cursor: pointer;
-                font-size: 2.5rem;
+                font-size: 1.5rem;
 
                 a {
                     text-decoration: none;
@@ -136,7 +136,7 @@ html, body {
         }
         
         @media screen  and (min-width: 769px) {
-            padding-inline: 5rem;
+            padding: 3rem 5rem;
             border-bottom-left-radius: 5rem;
             border-bottom-right-radius: 5rem;
 
@@ -158,6 +158,7 @@ html, body {
                     justify-content: space-between;
 
                     li {
+                        font-size: 2.5rem;
                         border-bottom: none;
                         white-space: nowrap;
                     }
@@ -192,7 +193,6 @@ html, body {
         font-size: 4rem;
         font-weight: 900;
         text-transform: uppercase;
-        text-align: center;
     }
 
     .hero-img {
@@ -209,10 +209,6 @@ html, body {
 
     .hero-info {
         margin: 2rem 0;
-        h3 {
-            font-size: 3rem;
-            font-weight: 700;
-        }
 
         p {
             font-size: 2rem;
@@ -230,7 +226,7 @@ html, body {
             cursor: pointer;
             color: $white;
             font-weight: 600;
-            margin: 2rem 0;
+            margin: 3rem 0;
               
             .hero-cta {
                 display: block;
@@ -263,6 +259,7 @@ html, body {
         h1 {
             font-size: 9rem;
             margin-top: 5rem;
+            text-align: center;
         }
 
         .hero-img {
@@ -273,12 +270,8 @@ html, body {
         .hero-info {
             padding-inline: 15rem;
 
-            h3 {
-                font-size: 5rem;
-            }
-
             p {
-                font-size: 3rem;
+                font-size: 2.5rem;
             }
 
             button {
@@ -310,14 +303,15 @@ main {
     }
 
     .whoWeAre-header {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         font-weight: 700;
+        margin-top: 1rem;
     }
 
     .whoWeAre-text {
-        font-size: 2rem;
+        font-size: 1.2rem;
         font-weight: 500;
-        margin-top: .5rem;
+        margin-top: 1rem;
     }
 
     .whoWeAre-cta {
@@ -325,10 +319,10 @@ main {
         align-items: center;
         justify-content: space-between;
         width: max-content;
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 600;
         margin: 2rem 0;
-        padding: 1rem;
+        padding: .5rem;
         border-radius: 1rem;
         border: unset;
         color: $black;
@@ -376,15 +370,17 @@ main {
         }
 
         .whoWeAre-header {
-            font-size: 3.5rem;
+            font-size: 2.5rem;
         }
 
         .whoWeAre-text {
-            font-size: 3rem;
+            font-size: 2rem;
         }
 
         .whoWeAre-cta {
             align-self: flex-end;
+            font-size: 2rem;
+            padding: 1rem;
         }
     }
 
@@ -414,11 +410,11 @@ main {
         }
 
         .statement-body {
-            font-size: 2rem;
+            font-size: 1.5rem;
             align-self: left;
 
             p {
-                font-size: 2.5rem;
+                font-size: 2rem;
                 font-weight: 700;
             }
         }
@@ -448,7 +444,7 @@ main {
             }
 
             .statement-body {
-                font-size: 2.5rem;
+                font-size: 2rem;
 
                 p {
                     font-size: 3rem;
@@ -464,14 +460,14 @@ main {
     padding: 2rem;
 
     h2 {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         font-weight: 800;
         text-transform: uppercase;
     }
 
     p {
         margin: 1rem 0;
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         font-weight: 600;
     }
 
@@ -479,8 +475,8 @@ main {
         font-size: 1.5rem;
         font-weight: 600;
         position: relative;
-        margin: auto;
-        padding: 1.5rem 2.5rem;
+        margin: 2rem auto;
+        padding: 1rem 2rem;
         border: none;
         border-radius: 2em;
         background: $white;
@@ -501,7 +497,7 @@ main {
             top: 50%;
             left: 50%;
             width: 9em;
-            height: 3em;
+            height: 2em;
             border-radius: 2em;
             transform: translate(-50%, -50%);
         }
@@ -509,17 +505,17 @@ main {
         &:hover .border {
             display: block;
             width: 15rem;
-            height: 6rem;
+            height: 5rem;
         }
     }
 
     @media screen and (min-width: 769px) {
         h2 {
-            font-size: 5rem;
+            font-size: 4rem;
         }
 
         p {
-            font-size: 3rem;
+            font-size: 2rem;
         }
 
         button {
@@ -557,7 +553,7 @@ main {
 
         p {
             color: $black;
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 700;
         }
 
@@ -573,7 +569,7 @@ main {
         border: none;
         background: $primary;
         border-radius: 2rem;
-        padding: 1.5rem;
+        padding: 1rem;
         display: flex;
         margin-inline: auto;
         margin-top: 5rem;
@@ -581,7 +577,7 @@ main {
         a {
             text-decoration: none;
             color: $white;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: 600;
             text-transform: uppercase;
         }
@@ -595,7 +591,7 @@ main {
         padding: 4rem;
 
         p {
-            font-size: 3rem;
+            font-size: 2.5rem;
             margin: 2rem 0;
         }
 
@@ -610,7 +606,7 @@ main {
             }
 
             p {
-                font-size: 3rem;
+                font-size: 2.5rem;
 
             }
 
@@ -639,17 +635,25 @@ main {
             gap: 4rem;
 
             .offer-img>img {
-                width: 40rem;
-                height: 30rem;
+                width: 35rem;
+                height: 25rem;
             }
 
             p {
-                font-size: 3.5rem;
+                font-size: 3rem;
 
             }
 
             span {
-                font-size: 2.5rem;
+                font-size: 2rem;
+            }
+        }
+
+        .learn-more {
+            padding: 1.5rem;
+
+            a {
+                font-size: 1.5rem;
             }
         }
         
@@ -666,7 +670,7 @@ main {
     color: $sec-white;
 
     h3 {
-        font-size: 4rem;
+        font-size: 3rem;
         text-align: center;
     }
 
@@ -682,13 +686,13 @@ main {
             list-style: none;
             outline: none;
             cursor: pointer;
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 700;
             margin:  .5rem 0;
         }
 
         .faq-answer {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             padding: 10px;
             font-weight: 600;
             display: flex;
@@ -711,19 +715,23 @@ main {
     @media screen and (min-width: 769px) {
         margin: 10rem;
 
+        h3 {
+            font-size: 4rem;
+        }
+
         .faq {
             padding: 2rem 0;
 
             .faq-question {
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
 
             .faq-answer {
-                font-size: 2rem;
+                font-size: 1.5rem;
                 
                 span>img {
-                    width: 20rem;
-                    height: 20rem;
+                    width: 15rem;
+                    height: 15rem;
                 }
             }
 
@@ -744,11 +752,11 @@ main {
     .logo {
         display: flex;
         justify-content: center;
-        margin: 3rem 0;
+        margin: 1rem 0;
 
         img {
-            width: 15rem;
-            height: 10rem;
+            width: 7rem;
+            height: 5rem;
         }
 
     }
@@ -763,19 +771,19 @@ main {
 
         div {
             h3 {
-                font-size: 2.5rem;
+                font-size: 1.5rem;
                 text-transform: uppercase;
             }
 
             p {
                 display: flex;
                 flex-direction: column;
-                font-size: 2rem;
+                font-size: 1.2rem;
                 font-weight: 600;
             }
 
             p>span>a {
-                font-size: 2rem;
+                font-size: 1.2rem;
                 cursor: pointer;
                 font-weight: 500;
                 text-decoration: none;
@@ -793,13 +801,14 @@ main {
     section {
         .footer-item {
             margin: 1rem 0;
+
             h3 {
-                font-size: 2.5rem;
+                font-size: 1.5rem;
                 text-transform: uppercase;
             }
     
             .footer-link>li>a{
-                font-size: 2rem;
+                font-size: 1.2rem;
                 cursor: pointer;
                 font-weight: 500;
                 text-decoration: none;
@@ -813,22 +822,61 @@ main {
             p {
                 display: flex;
                 flex-direction: column;
-                font-size: 2.5rem;
+                font-size: 1.2rem;
                 font-weight: 600;
             }
 
         }
 
-        @media screen and (min-width: 769px) {
+        
+    }
+    
+    @media screen and (min-width: 769px) {
+        padding-inline: 5rem;
+
+        .logo {
+            margin: 2rem 0;
+
+            img {
+                width: 15rem;
+                height: 10rem;
+            }
+        }
+
+        aside {
+            div {
+                h3 {
+                    font-size: 2.5rem;
+                }
+
+                p,
+                p>span>a {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        section {
             display: flex;
             justify-content: space-evenly;
             padding: 2rem;
-        }
 
+            .footer-item {
+                h3 {
+                    font-size: 2.5rem;
+                }
+    
+                .footer-link>li>a,
+                p {
+                    font-size: 2rem;
+                }
+            }
+
+        }
     }
 
     .legal {
-        font-size: 1.5rem;
+        font-size: 1rem;
         text-align: center;
         margin-top: 3rem;
 
