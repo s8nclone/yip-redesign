@@ -158,7 +158,7 @@ html, body {
                     justify-content: space-between;
 
                     li {
-                        font-size: 2.5rem;
+                        font-size: 2rem;
                         border-bottom: none;
                         white-space: nowrap;
                     }
@@ -166,7 +166,7 @@ html, body {
 
                 .nav-cta {
                     padding: 1rem;
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                     width: 15rem;
 
                     &:hover {
@@ -588,7 +588,6 @@ main {
     }
 
     @media screen and (min-width: 650px) {
-        padding: 4rem;
 
         p {
             font-size: 2.5rem;
@@ -600,18 +599,26 @@ main {
             margin: 5rem auto;
             gap: 4rem;
 
-            .offer-img>img {
-                width: 25rem;
-                height: 20rem;
+            .offer-img {
+                max-width: 50%;
+                img {
+                    min-width: 25rem;
+                    height: 15rem;
+                }
             }
 
-            p {
-                font-size: 2.5rem;
+            .offer-body {
+                max-width: 50%;
+                
+                p {
+                    font-size: 2.5rem;
+    
+                }
+    
+                span {
+                    font-size: 2rem;
+                }
 
-            }
-
-            span {
-                font-size: 2rem;
             }
         }
         
@@ -635,7 +642,7 @@ main {
             gap: 4rem;
 
             .offer-img>img {
-                width: 35rem;
+                min-width: 35rem;
                 height: 25rem;
             }
 
@@ -831,62 +838,19 @@ main {
         
     }
     
-    @media screen and (min-width: 769px) {
-        padding-inline: 5rem;
-
-        .logo {
-            margin: 2rem 0;
-
-            img {
-                width: 15rem;
-                height: 10rem;
-            }
-        }
-
-        aside {
-            div {
-                h3 {
-                    font-size: 2.5rem;
-                }
-
-                p,
-                p>span>a {
-                    font-size: 2rem;
-                }
-            }
-        }
-
-        section {
-            display: flex;
-            justify-content: space-evenly;
-            padding: 2rem;
-
-            .footer-item {
-                h3 {
-                    font-size: 2.5rem;
-                }
     
-                .footer-link>li>a,
-                p {
-                    font-size: 2rem;
-                }
-            }
-
-        }
-    }
-
     .legal {
-        font-size: 1rem;
+        font-size: 1.2rem;
         text-align: center;
         margin-top: 3rem;
-
+        
         span>a {
             text-decoration: none;
             color: $black;
             font-weight: 700;
         }
     }
-
+    
     .go-up {
         width: 5rem;
         height: 5rem;
@@ -904,5 +868,52 @@ main {
         outline: none;
     }
     
+    @media screen and (min-width: 769px) {
+        padding-inline: 5rem;
+    
+        .logo {
+            margin: 2rem 0;
+    
+            img {
+                width: 15rem;
+                height: 10rem;
+            }
+        }
+    
+        aside {
+            div {
+                h3 {
+                    font-size: 2.5rem;
+                }
+    
+                p,
+                p>span>a {
+                    font-size: 2rem;
+                }
+            }
+        }
+    
+        section {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 2rem;
+    
+            .footer-item {
+                h3 {
+                    font-size: 2.5rem;
+                }
+    
+                .footer-link>li>a,
+                p {
+                    font-size: 2rem;
+                }
+            }
+    
+        }
+    
+        .legal {
+            font-size: 1.5rem;
+        }
+    }
 }
 

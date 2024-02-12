@@ -130,13 +130,13 @@ html, body {
     justify-content: space-between;
   }
   .header .navigation .navitems .navlist li {
-    font-size: 2.5rem;
+    font-size: 2rem;
     border-bottom: none;
     white-space: nowrap;
   }
   .header .navigation .navitems .nav-cta {
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 15rem;
   }
   .header .navigation .navitems .nav-cta:hover {
@@ -489,9 +489,6 @@ html, body {
   box-shadow: 0 0 2rem rgba(180, 215, 92, 0.8549019608);
 }
 @media screen and (min-width: 650px) {
-  .whatWeOffer {
-    padding: 4rem;
-  }
   .whatWeOffer p {
     font-size: 2.5rem;
     margin: 2rem 0;
@@ -501,14 +498,20 @@ html, body {
     margin: 5rem auto;
     gap: 4rem;
   }
-  .whatWeOffer .offer-items .offer-img > img {
-    width: 25rem;
-    height: 20rem;
+  .whatWeOffer .offer-items .offer-img {
+    max-width: 50%;
   }
-  .whatWeOffer .offer-items p {
+  .whatWeOffer .offer-items .offer-img img {
+    min-width: 25rem;
+    height: 15rem;
+  }
+  .whatWeOffer .offer-items .offer-body {
+    max-width: 50%;
+  }
+  .whatWeOffer .offer-items .offer-body p {
     font-size: 2.5rem;
   }
-  .whatWeOffer .offer-items span {
+  .whatWeOffer .offer-items .offer-body span {
     font-size: 2rem;
   }
   .whatWeOffer .right {
@@ -529,7 +532,7 @@ html, body {
     gap: 4rem;
   }
   .whatWeOffer .offer-items .offer-img > img {
-    width: 35rem;
+    min-width: 35rem;
     height: 25rem;
   }
   .whatWeOffer .offer-items p {
@@ -683,6 +686,32 @@ html, body {
   font-size: 1.2rem;
   font-weight: 600;
 }
+.footer .legal {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+.footer .legal span > a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+}
+.footer .go-up {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 5%;
+  right: 1%;
+  border-radius: 50%;
+  background-color: #FFF;
+  color: #000;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
 @media screen and (min-width: 769px) {
   .footer {
     padding-inline: 5rem;
@@ -713,32 +742,9 @@ html, body {
   .footer section .footer-item p {
     font-size: 2rem;
   }
-}
-.footer .legal {
-  font-size: 1rem;
-  text-align: center;
-  margin-top: 3rem;
-}
-.footer .legal span > a {
-  text-decoration: none;
-  color: #000;
-  font-weight: 700;
-}
-.footer .go-up {
-  width: 5rem;
-  height: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  bottom: 5%;
-  right: 1%;
-  border-radius: 50%;
-  background-color: #FFF;
-  color: #000;
-  cursor: pointer;
-  border: none;
-  outline: none;
+  .footer .legal {
+    font-size: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
